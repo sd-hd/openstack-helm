@@ -35,6 +35,6 @@ repo run:
     sudo docker build \
       --network host \
       --build-arg KUBE_VERSION=${KUBE_VERSION} \
-      -t docker.io/port/ceph-config-helper:${KUBE_VERSION} \
+      -t docker.io/sdevd/ceph-config-helper:${KUBE_VERSION} \
       tools/images/ceph-config-helper
-    sudo docker push docker.io/port/ceph-config-helper:${KUBE_VERSION}
+    sudo docker push docker.io/sdevd/ceph-config-helper:${KUBE_VERSION}
